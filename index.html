@@ -1,8 +1,152 @@
 <!DOCTYPE html>
-<html><head><title>Image Tools Studio</title>
-<link rel="stylesheet" href="css/main.css"></head>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Image Tools Studio - Free Online Image Tools</title>
+<meta name="description" content="Compress, Resize, Convert and Optimize Images Online Free.">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#0f172a;
+color:white;
+}
+
+header{
+padding:20px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:#111827;
+}
+
+.logo{
+font-size:24px;
+font-weight:bold;
+}
+
+.hero{
+text-align:center;
+padding:80px 20px;
+}
+
+.hero h1{
+font-size:48px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:18px;
+color:#cbd5e1;
+margin-bottom:30px;
+}
+
+.btn{
+background:#3b82f6;
+padding:12px 25px;
+border-radius:10px;
+color:white;
+text-decoration:none;
+}
+
+.tools{
+padding:40px 20px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.card{
+background:#1e293b;
+padding:25px;
+border-radius:15px;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+.card h3{
+margin-bottom:10px;
+}
+
+.card p{
+color:#94a3b8;
+margin-bottom:15px;
+}
+
+.card a{
+text-decoration:none;
+color:#60a5fa;
+}
+
+footer{
+text-align:center;
+padding:20px;
+background:#111827;
+margin-top:40px;
+}
+</style>
+</head>
+
 <body>
-<h1>Image Tools Studio</h1>
-<p>Starter deployment package.</p>
-<script src="js/app.js"></script>
-</body></html>
+
+<header>
+<div class="logo">Image Tools Studio</div>
+</header>
+
+<section class="hero">
+<h1>Free Online Image Tools</h1>
+<p>Compress, Resize and Convert Images Instantly.</p>
+<a href="#tools" class="btn">Explore Tools</a>
+</section>
+
+<section class="tools" id="tools">
+
+<div class="card">
+<h3>Image Compressor</h3>
+<p>Reduce image size without losing quality.</p>
+<a href="compress-image.html">Open Tool</a>
+</div>
+
+<div class="card">
+<h3>Image Resizer</h3>
+<p>Resize images to any dimension.</p>
+<a href="resize-image.html">Open Tool</a>
+</div>
+
+<div class="card">
+<h3>JPG to PNG</h3>
+<p>Convert JPG images into PNG.</p>
+<a href="jpg-to-png.html">Open Tool</a>
+</div>
+
+<div class="card">
+<h3>PNG to JPG</h3>
+<p>Convert PNG images into JPG.</p>
+<a href="png-to-jpg.html">Open Tool</a>
+</div>
+
+<div class="card">
+<h3>WEBP Converter</h3>
+<p>Convert WEBP images easily.</p>
+<a href="webp-converter.html">Open Tool</a>
+</div>
+
+</section>
+
+<footer>
+© 2026 Image Tools Studio
+</footer>
+
+</body>
+</html>
