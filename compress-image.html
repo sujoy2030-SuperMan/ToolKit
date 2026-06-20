@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Image Compressor - Image Tools Studio</title>
+
+<meta name="description"
+content="Compress JPG, PNG and WEBP images online for free.">
+
+<link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+<header class="navbar">
+
+<div class="logo">
+Image<span>Tools</span>
+</div>
+
+<nav class="nav-links">
+<a href="index.html">Home</a>
+</nav>
+
+<button id="themeBtn">🌙</button>
+
+</header>
+
+<section class="tools">
+
+<h1>Image Compressor</h1>
+
+<div class="tool-card">
+
+<div id="dropZone">
+
+<p>Drag & Drop Image Here</p>
+
+<input
+type="file"
+id="fileInput"
+accept="image/*">
+
+</div>
+
+<br>
+
+<label>
+Compression Quality
+</label>
+
+<input
+type="range"
+id="quality"
+min="10"
+max="100"
+value="70">
+
+<p id="qualityValue">
+70%
+</p>
+
+<button id="compressBtn">
+Compress Image
+</button>
+
+<p id="beforeSize"></p>
+
+<p id="afterSize"></p>
+
+<a
+id="downloadBtn"
+style="display:none;">
+Download Image
+</a>
+
+</div>
+
+</section>
+
+<script src="js/app.js"></script>
+<script src="js/compress.js"></script>
+
+</body>
+</html>
