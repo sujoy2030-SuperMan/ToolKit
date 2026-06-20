@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convert Image Formats | JPG, PNG, WebP | Image Tools Studio</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body data-theme="dark">
+    <nav>
+        <div class="container nav-content">
+            <a href="index.html" class="logo">Image Tools Studio</a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="compress-image.html">Compress</a>
+                <a href="resize-image.html">Resize</a>
+                <a href="crop-image.html">Crop</a>
+                <a href="convert-image.html">Convert</a>
+                <button id="themeToggle" style="background:none; border:none; cursor:pointer;">☀️</button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container" style="padding-top: 120px;">
+        <div class="ad-box ad-h">Advertisement</div>
+        
+        <div style="text-align: center; margin-bottom: 64px;">
+            <h1>Convert Image</h1>
+            <p>Change your image format instantly without losing quality.</p>
+        </div>
+
+        <div id="uploadArea" class="upload-wrapper" style="max-width: 600px;">
+            <div class="upload-area">
+                <div style="font-size: 48px; margin-bottom: 20px;">🔄</div>
+                <h3>Select image to convert</h3>
+                <input type="file" id="fileInput" hidden accept="image/*">
+            </div>
+        </div>
+
+        <div id="workspace" style="display: none;">
+            <div style="display: grid; grid-template-columns: 1fr 350px; gap: 40px;">
+                <div class="glass-card" style="padding: 24px; border-radius: 20px; text-align: center;">
+                    <img id="previewImg" style="max-width: 100%; max-height: 500px; border-radius: 12px; background: #000;">
+                </div>
+
+                <div class="glass-card" style="padding: 32px; border-radius: 20px; height: fit-content;">
+                    <h3>Convert Options</h3>
+                    <div style="margin-top: 32px;">
+                        <label style="display: block; margin-bottom: 12px; font-size: 14px;">Target Format</label>
+                        <select id="formatSelect" style="width: 100%; padding: 12px; border-radius: 8px; border: 1px solid var(--border-color); background: var(--bg-main); color: var(--text-main); font-size: 16px;">
+                            <option value="png">PNG</option>
+                            <option value="jpeg">JPG</option>
+                            <option value="webp">WebP</option>
+                        </select>
+                    </div>
+                    <button id="downloadBtn" class="btn btn-primary" style="width: 100%; margin-top: 40px; padding: 16px;">Convert & Download</button>
+                    <button onclick="location.reload()" class="btn btn-secondary" style="width: 100%; margin-top: 12px;">Reset</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="ad-box ad-f" style="margin-top: 80px;">Advertisement</div>
+    </main>
+
+    <script src="js/app.js"></script>
+    <script src="js/convert.js"></script>
+</body>
+</html>
