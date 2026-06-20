@@ -3,315 +3,213 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Image Tools Studio</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<title>Image Tools Studio - Free Online Image Tools</title>
 
-<style>
+<meta name="description"
+content="Compress, Resize and Convert Images Online Free. Fast, Secure and Browser-Based Image Tools.">
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Poppins',sans-serif;
-}
+<meta name="keywords"
+content="Image Compressor, Image Resizer, JPG to PNG, PNG to JPG, Image Tools">
 
-body{
-background:#0f172a;
-color:white;
-overflow-x:hidden;
-}
-
-/* Background */
-
-.bg1{
-position:fixed;
-width:400px;
-height:400px;
-background:#2563eb;
-filter:blur(180px);
-top:-100px;
-left:-100px;
-opacity:.4;
-z-index:-1;
-}
-
-.bg2{
-position:fixed;
-width:350px;
-height:350px;
-background:#9333ea;
-filter:blur(180px);
-bottom:-100px;
-right:-100px;
-opacity:.4;
-z-index:-1;
-}
-
-/* Navbar */
-
-nav{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:20px 8%;
-}
-
-.logo{
-font-size:28px;
-font-weight:700;
-}
-
-.logo span{
-color:#60a5fa;
-}
-
-nav ul{
-display:flex;
-gap:30px;
-list-style:none;
-}
-
-nav a{
-color:white;
-text-decoration:none;
-font-weight:500;
-}
-
-/* Hero */
-
-.hero{
-padding:80px 8%;
-text-align:center;
-}
-
-.hero h1{
-font-size:clamp(40px,6vw,75px);
-line-height:1.1;
-margin-bottom:20px;
-}
-
-.gradient{
-background:linear-gradient(90deg,#60a5fa,#c084fc);
--webkit-background-clip:text;
--webkit-text-fill-color:transparent;
-}
-
-.hero p{
-max-width:700px;
-margin:auto;
-font-size:18px;
-color:#cbd5e1;
-margin-bottom:35px;
-}
-
-.buttons{
-display:flex;
-justify-content:center;
-gap:15px;
-flex-wrap:wrap;
-}
-
-.btn{
-padding:14px 28px;
-border-radius:14px;
-text-decoration:none;
-font-weight:600;
-}
-
-.btn-primary{
-background:#2563eb;
-color:white;
-}
-
-.btn-secondary{
-border:1px solid rgba(255,255,255,.2);
-backdrop-filter:blur(10px);
-color:white;
-}
-
-/* Stats */
-
-.stats{
-display:flex;
-justify-content:center;
-gap:50px;
-margin-top:60px;
-flex-wrap:wrap;
-}
-
-.stat h2{
-font-size:32px;
-}
-
-.stat p{
-color:#94a3b8;
-}
-
-/* Tools */
-
-.tools{
-padding:80px 8%;
-}
-
-.section-title{
-text-align:center;
-font-size:40px;
-margin-bottom:50px;
-}
-
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
-}
-
-.card{
-background:rgba(255,255,255,.05);
-backdrop-filter:blur(15px);
-border:1px solid rgba(255,255,255,.08);
-padding:25px;
-border-radius:20px;
-transition:.3s;
-}
-
-.card:hover{
-transform:translateY(-8px);
-border-color:#60a5fa;
-}
-
-.card h3{
-margin-bottom:10px;
-}
-
-.card p{
-color:#94a3b8;
-margin-bottom:15px;
-}
-
-.card a{
-color:#60a5fa;
-text-decoration:none;
-font-weight:600;
-}
-
-/* Footer */
-
-footer{
-text-align:center;
-padding:30px;
-margin-top:80px;
-color:#94a3b8;
-border-top:1px solid rgba(255,255,255,.08);
-}
-
-</style>
+<link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
 
-<div class="bg1"></div>
-<div class="bg2"></div>
+<header class="navbar">
 
-<nav>
-<div class="logo">Image<span>Tools</span></div>
+<div class="logo">
+Image<span>Tools</span>
+</div>
 
-<ul>
-<li><a href="#">Home</a></li>
-<li><a href="#">Tools</a></li>
-<li><a href="#">Blog</a></li>
-<li><a href="#">Contact</a></li>
-</ul>
+<nav class="nav-links">
+<a href="#">Home</a>
+<a href="#tools">Tools</a>
+<a href="#features">Features</a>
+<a href="#faq">FAQ</a>
 </nav>
+
+<button id="themeBtn">🌙</button>
+
+</header>
 
 <section class="hero">
 
+<div class="hero-content">
+
 <h1>
 Free Online
-<span class="gradient">Image Tools</span>
+<span>Image Tools</span>
 </h1>
 
 <p>
-Compress, Resize, Convert and Optimize Images
-instantly without uploading to any server.
-Fast, Secure and 100% Free.
+Compress, Resize and Convert Images instantly.
+Fast, Secure and 100% Browser-Based.
+No Upload Required.
 </p>
 
-<div class="buttons">
-<a href="#tools" class="btn btn-primary">Start Free</a>
-<a href="#" class="btn btn-secondary">Explore Tools</a>
+<div class="hero-buttons">
+
+<a href="#tools" class="btn-primary">
+Explore Tools
+</a>
+
+<a href="#features" class="btn-secondary">
+Learn More
+</a>
+
 </div>
 
-<div class="stats">
+</div>
 
-<div class="stat">
+</section>
+
+<section class="stats">
+
+<div class="stat-card">
 <h2>10K+</h2>
 <p>Images Processed</p>
 </div>
 
-<div class="stat">
+<div class="stat-card">
 <h2>100%</h2>
 <p>Free Tools</p>
 </div>
 
-<div class="stat">
+<div class="stat-card">
 <h2>Fast</h2>
 <p>Browser Processing</p>
 </div>
 
+</section>
+
+<section id="tools" class="tools">
+
+<h2>Popular Tools</h2>
+
+<div class="tool-grid">
+
+<div class="tool-card">
+<h3>Image Compressor</h3>
+<p>Reduce image size while maintaining quality.</p>
+<a href="compress-image.html">Open Tool →</a>
+</div>
+
+<div class="tool-card">
+<h3>Image Resizer</h3>
+<p>Resize images to custom dimensions.</p>
+<a href="resize-image.html">Open Tool →</a>
+</div>
+
+<div class="tool-card">
+<h3>JPG to PNG</h3>
+<p>Convert JPG images to PNG format.</p>
+<a href="#">Coming Soon</a>
+</div>
+
+<div class="tool-card">
+<h3>PNG to JPG</h3>
+<p>Convert PNG images to JPG format.</p>
+<a href="#">Coming Soon</a>
+</div>
+
+<div class="tool-card">
+<h3>WEBP Converter</h3>
+<p>Convert WEBP images easily.</p>
+<a href="#">Coming Soon</a>
+</div>
+
+<div class="tool-card">
+<h3>Image to PDF</h3>
+<p>Create PDF files from images.</p>
+<a href="#">Coming Soon</a>
+</div>
+
 </div>
 
 </section>
 
-<section class="tools" id="tools">
+<section id="features" class="features">
 
-<h2 class="section-title">Popular Tools</h2>
+<h2>Why Choose Image Tools Studio?</h2>
 
-<div class="grid">
+<div class="feature-grid">
 
-<div class="card">
-<h3>Image Compressor</h3>
-<p>Reduce image size without losing quality.</p>
-<a href="#">Open Tool →</a>
+<div class="feature-card">
+<h3>⚡ Fast</h3>
+<p>Process images instantly in your browser.</p>
 </div>
 
-<div class="card">
-<h3>Image Resizer</h3>
-<p>Resize images to any dimensions.</p>
-<a href="#">Open Tool →</a>
+<div class="feature-card">
+<h3>🔒 Secure</h3>
+<p>Your files never leave your device.</p>
 </div>
 
-<div class="card">
-<h3>JPG to PNG</h3>
-<p>Convert JPG files to PNG instantly.</p>
-<a href="#">Open Tool →</a>
+<div class="feature-card">
+<h3>📱 Responsive</h3>
+<p>Works perfectly on Mobile, Tablet and PC.</p>
 </div>
 
-<div class="card">
-<h3>PNG to JPG</h3>
-<p>Convert PNG files to JPG format.</p>
-<a href="#">Open Tool →</a>
-</div>
-
-<div class="card">
-<h3>WEBP Converter</h3>
-<p>Convert WEBP images easily.</p>
-<a href="#">Open Tool →</a>
-</div>
-
-<div class="card">
-<h3>Image to PDF</h3>
-<p>Create PDF from images.</p>
-<a href="#">Open Tool →</a>
+<div class="feature-card">
+<h3>💯 Free</h3>
+<p>Use all tools without paying anything.</p>
 </div>
 
 </div>
+
+</section>
+
+<section id="faq" class="faq">
+
+<h2>Frequently Asked Questions</h2>
+
+<div class="faq-item">
+<h3>Is Image Tools Studio free?</h3>
+<p>Yes. All tools are completely free.</p>
+</div>
+
+<div class="faq-item">
+<h3>Do you upload my files?</h3>
+<p>No. Everything happens inside your browser.</p>
+</div>
+
+<div class="faq-item">
+<h3>Can I use it on mobile?</h3>
+<p>Yes. The website is fully mobile responsive.</p>
+</div>
+
+</section>
+
+<section class="cta">
+
+<h2>Start Optimizing Images Today</h2>
+
+<p>
+Use our free tools to compress and resize images quickly.
+</p>
+
+<a href="compress-image.html" class="btn-primary">
+Get Started
+</a>
 
 </section>
 
 <footer>
-© 2026 Image Tools Studio • All Rights Reserved
+
+<div class="footer-links">
+<a href="about.html">About</a>
+<a href="contact.html">Contact</a>
+<a href="privacy-policy.html">Privacy Policy</a>
+</div>
+
+<p>
+© 2026 Image Tools Studio. All Rights Reserved.
+</p>
+
 </footer>
 
+<script src="js/app.js"></script>
+
 </body>
-</html>
+  </html>
